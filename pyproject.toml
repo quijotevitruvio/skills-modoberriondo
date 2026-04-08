@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vanguard-sovereignty"
+version = "1.0.0"
+authors = [
+  { name = "quijotevitruvio" },
+]
+description = "Vanguard Technical Sovereignty: Global Infrastructure Orchestrator and 230 Expert Skills."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.scripts]
+vanguard = "vanguard:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["vanguard.py", "skills", "vanguard_core"]

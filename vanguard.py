@@ -133,5 +133,8 @@ class VanguardCLI:
         print("   - CODEX verified.")
         print("✅ [VANGUARD] Synchronization complete.")
 
-if __name__ == "__main__":
+def main():
     VanguardCLI().run()
+
+if __name__ == "__main__":
+    main()

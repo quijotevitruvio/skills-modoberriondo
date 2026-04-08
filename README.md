@@ -245,14 +245,28 @@ Para evitar la amnesia de contexto y asegurar la integridad de la ruta, Vanguard
 
 ---
 
-## 🛠️ Protocolos de Comando
+## 🚀 Instalación & Uso (Sovereign Package)
 
-- **Vanguard CLI**: `python vanguard.py` - Punto de entrada central optimizado.
-- `/build [task]`: **Vanguard Autopilot** - Ejecución agéntica metódica paso a paso.
-- `/map`: **Vanguard Librarian** - Escaneo y actualización del mapa de arquitectura en tiempo real.
-- `/remember [info]`: Inyección de conocimiento persistente en el Master Codex.
-- `/update`: Rutina de mantenimiento descentralizado Vanguard 175.
-- `/backup`: Sincronización blindada y automatizada a GitHub.
-- `/menu`: Interfaz de terminal Vanguard de alta densidad.
+Vanguard ahora es un paquete de Python instalable. Puedes usar el comando global `vanguard` desde cualquier parte de tu terminal.
+
+### 📦 Instalación Local
+Desde el directorio raíz (`.antigravity`):
+```bash
+pip install -e .
+```
+
+### 🛠️ Comandos Globales
+- `vanguard status`: Reporte de salud del ecosistema.
+- `vanguard map`: Regeneración del mapa de repositorio.
+- `vanguard build`: Orquestación agéntica autónoma.
+- `vanguard sync`: Sincronización de contexto y CODEX.
+
+---
+
+## 📦 Releases & Versionado
+Vanguard utiliza versionado semántico (SemVer) gestionado a través de GitHub Actions. Cada vez que se crea un **Tag** (ej. `v1.0.0`), el sistema:
+1.  Genera un **Release** en GitHub.
+2.  Empaqueta los binarios (`.whl`, `.tar.gz`).
+3.  Publica los artefactos en el repositorio oficial.
 
 **Vanguard Summit Terminal: ONLINE & UNIVERSALIZED [Lvl 99]**
