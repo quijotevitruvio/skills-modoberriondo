@@ -19,8 +19,8 @@ El sistema opera mediante el **Vanguard Summit Orchestrator**, dividiendo el con
 5. **Bloque VIII-X**: WhatsApp CRM, Econometría & FinTech Soberana.
 6. **Bloque XI-XII**: Orquestación Agéntica & Operaciones de Frontera (ABUs).
 
-### 🛠️ Protocolos de Comando Lvl 99
-
+### 🛠️ Protocolos de Comando Lvl 99 & CLI
+- **Vanguard CLI**: `python vanguard.py` - Punto de entrada central para auditorías, actualizaciones y respaldos.
 - `/update`: Rutina de mantenimiento descentralizado que sincroniza la soberanía técnica global.
 - `/backup`: Sincronización blindada y automatizada a este repositorio central.
 - `/menu`: Interfaz de terminal Vanguard para el arranque de sistemas.
@@ -42,8 +42,8 @@ The system operates via the **Vanguard Summit Orchestrator**, dividing knowledge
 5. **Blocks VIII-X**: WhatsApp CRM, Econometrics & Sovereign FinTech.
 6. **Blocks XI-XII**: Agentic Orchestration & Frontier Operations (ABUs).
 
-### 🛠️ Lvl 99 Command Protocols
-
+### 🛠️ Lvl 99 Command Protocols & CLI
+- **Vanguard CLI**: `python vanguard.py` - Central entry point for audits, updates, and backups.
 - `/update`: Decentralized maintenance routine that synchronizes global technical sovereignty.
 - `/backup`: Hardened, automated synchronization to this central repository.
 - `/menu`: Vanguard terminal interface for system boot and mode selection.
@@ -52,6 +52,7 @@ The system operates via the **Vanguard Summit Orchestrator**, dividing knowledge
 
 ## 📂 Jerarquía de Activos / Asset Hierarchy
 
+- `vanguard.py`: Functional CLI Core / Núcleo de la CLI Funcional.
 - `.vanguard/`: Orchestration blocks and logic / Bloques de orquestación central.
 - `vanguard_skills/`: Mirror of the 175 skill documentations / Espejo de las 175 documentaciones de élite.
 - `CHANGELOG.md`: Historical technical audit / Auditoría técnica e historial de forja.
