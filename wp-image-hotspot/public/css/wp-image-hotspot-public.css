@@ -1,0 +1,464 @@
+/* 
+ * WP Image Hotspot Premium - Public CSS
+ */
+
+.wp-image-hotspot-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    /* Keep panzoom contained by default */
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wp-image-hotspot-panzoom-element {
+    position: relative;
+    display: inline-block;
+    /* Hug the image */
+    width: 100%;
+    transform-origin: 0 0;
+}
+
+.wp-image-hotspot-main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    /* Let drag/pan pass through to panzoom element */
+}
+
+/* Pins */
+.wp-image-hotspot-pin {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* Centered on coords */
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+}
+
+.wp-image-hotspot-pin i {
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.wp-image-hotspot-pin .pin-custom-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Hover - simple tooltip */
+.pin-tooltip-text {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 11;
+}
+
+.pin-tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+.wp-image-hotspot-pin:hover .pin-tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Hover - lift pin without fighting custom scale since transform is set inline */
+.wp-image-hotspot-pin:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.15);
+}
+
+/* Animations */
+/* Pulse */
+.wp-image-hotspot-pin.anim-pulse::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid inherit;
+    background: inherit;
+    z-index: -1;
+    animation: hotspot-pulse 2s infinite cubic-bezier(0.21, 0.53, 0.56, 1);
+}
+
+@keyframes hotspot-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Bounce */
+.wp-image-hotspot-pin.anim-bounce {
+    animation: hotspot-bounce 2s infinite ease-in-out;
+}
+
+@keyframes hotspot-bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -80%);
+    }
+}
+
+/* Ripple */
+.wp-image-hotspot-pin.anim-ripple::after,
+.wp-image-hotspot-pin.anim-ripple::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: inherit;
+    z-index: -1;
+    opacity: 0.6;
+    animation: hotspot-ripple 2s linear infinite;
+}
+
+.wp-image-hotspot-pin.anim-ripple::after {
+    animation-delay: 1s;
+}
+
+@keyframes hotspot-ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/* Popup Window */
+.wp-image-hotspot-popup {
+    position: absolute;
+    z-index: 100;
+    width: 280px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-origin: center;
+    pointer-events: none;
+    /* Prevent clicks when hidden */
+}
+
+.wp-image-hotspot-popup.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /* Allow clicks when visible */
+}
+
+/* Inner padding and close */
+.hotspot-popup-inner {
+    padding: 20px;
+    position: relative;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.hotspot-popup-inner h4 {
+    margin: 0 0 10px 0;
+    padding-right: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.hotspot-popup-inner img,
+.hotspot-popup-inner figure,
+.hotspot-popup-inner iframe,
+.hotspot-popup-inner video {
+    max-width: 100%;
+    height: auto;
+}
+
+.hotspot-popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hotspot-popup-close:hover {
+    color: #ff0000;
+}
+
+/* Positioning classes - These are managed mostly by JS, but we do base transforms here for entry animations */
+
+/* Popup entry animations — JS handles left/top positioning */
+.wp-image-hotspot-popup.pos-top,
+.wp-image-hotspot-popup.pos-bottom,
+.wp-image-hotspot-popup.pos-left,
+.wp-image-hotspot-popup.pos-right {
+    /* No transform offset: JS handles positioning via left/top */
+}
+
+.wp-image-hotspot-popup.is-active {
+    transform: translateY(0) scale(1);
+}
+
+/* Panzoom Controls */
+.wp-image-hotspot-controls {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 50;
+}
+
+.wp-image-hotspot-controls button {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: all 0.2s;
+}
+
+.wp-image-hotspot-controls button:hover {
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* Make popups full width/fixed at bottom on mobile */
+    .wp-image-hotspot-popup.is-active {
+        position: fixed !important;
+        /* Override JS positioning for mobile */
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        top: auto !important;
+        width: 100% !important;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(0);
+        z-index: 999999;
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .wp-image-hotspot-popup {
+        transform: translateY(100%);
+        /* Slide UP animation */
+    }
+}
+
+/* =============================================
+   Group Filter Buttons (#10)
+   ============================================= */
+.ih-group-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+    background: rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.ih-filter-btn {
+    display: inline-block;
+    padding: 5px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    color: #555;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1.5;
+}
+
+.ih-filter-btn:hover {
+    background: #f0f0f0;
+    border-color: #999;
+    color: #222;
+}
+
+.ih-filter-btn.active {
+    background: #1e73be;
+    border-color: #1e73be;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* =============================================
+   Popup Templates (#2)
+   ============================================= */
+.ih-template {
+    padding: 0;
+}
+
+.ih-tmpl-title {
+    font-size: 1.05em;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #222;
+}
+
+.ih-tmpl-body {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.ih-tmpl-body p:last-child { margin-bottom: 0; }
+
+/* Product */
+.ih-template-product .ih-tmpl-price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1e73be;
+    margin: 8px 0;
+}
+
+.ih-template-product .ih-tmpl-btn,
+.ih-template-location .ih-tmpl-btn {
+    display: inline-block;
+    padding: 7px 16px;
+    background: #1e73be;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.88em;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.ih-template-product .ih-tmpl-btn:hover,
+.ih-template-location .ih-tmpl-btn:hover {
+    background: #155a9b;
+    color: #fff;
+}
+
+/* Location */
+.ih-template-location .ih-tmpl-title i { color: #e44; }
+.ih-template-location .ih-tmpl-address {
+    font-size: 0.85em;
+    color: #555;
+    margin: 6px 0;
+}
+
+/* Person */
+.ih-template-person { text-align: center; }
+.ih-template-person .ih-tmpl-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    display: block;
+    border: 3px solid #eee;
+}
+
+.ih-template-person .ih-tmpl-role {
+    font-size: 0.82em;
+    color: #888;
+    margin-top: -4px;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+/* Video */
+.ih-template-video .ih-tmpl-video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 8px;
+    background: #111;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ih-template-video .ih-tmpl-video-wrap iframe,
+.ih-template-video .ih-tmpl-video-wrap video {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Focus visible for accessibility */
+.wp-image-hotspot-pin:focus-visible {
+    outline: 3px solid #0073aa;
+    outline-offset: 3px;
+}
+
+.hotspot-popup-close:focus-visible {
+    outline: 2px solid #000;
+}
