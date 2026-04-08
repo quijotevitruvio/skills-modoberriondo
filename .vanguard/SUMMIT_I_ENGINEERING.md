@@ -16,17 +16,17 @@
 ## 🏗️ SECTOR I: Frontend Architecture
 *Dominación de interfaces, rendimiento y experiencia de usuario.*
 
-1. **astro_expert**: **[v5 (2025)]** Performance-first web architecture using Islands and SSR.
-2. **react_master_architect**: **[v19 (2024)]** Advanced patterns for React 19, RSC, and state management.
+1. **astro_expert**: **[v6.1 (2026)]** Performance-first web architecture using Islands and SSR.
+2. **react_master_architect**: **[v19.x (2026)]** Advanced patterns for React 19, RSC, and state management.
 3. **preact_specialist**: High-performance, lightweight UI with Signals.
-4. **nextjs_15_master**: **[v15 (2024)]** Mastering App Router, Server Actions, and PPR.
-5. **tailwindcss_engine**: **[v4 (2025)]** Sophisticated design systems and JIT optimization.
-6. **typescript_master**: **[v5.7 (2024)]** Complex type engineering and strict type safety.
+4. **nextjs_16_master**: **[v16.2 (2026)]** Mastering App Router, Server Actions, and PPR.
+5. **tailwindcss_engine**: **[v4.2 (2026)]** Sophisticated design systems and JIT optimization.
+6. **typescript_master**: **[v6.0 (2026)]** Complex type engineering and strict type safety.
 7. **ui_ux_design_systems**: Expert Figma-to-code and component architecture.
 8. **css_modern_engine**: Advanced grids, flexbox, and browser performance.
 9. **html_semantic_architect**: Web standards and accessibility optimization.
-10. **vuejs_pro**: **[v3.5 (2024)]** Advanced Vue 3 composition API and performance.
-11. **svelte_master**: **[v5 (2024)]** Harnessing the compiler for ultra-fast interfaces.
+10. **vuejs_pro**: **[v3.6 (2026)]** Advanced Vue 3 composition API and performance.
+11. **svelte_master**: **[v5.x (2026)]** Harnessing the compiler for ultra-fast interfaces.
 12. **remix_architect**: Web-standards based fullstack development.
 13. **solidjs_specialist**: Fine-grained reactivity without the virtual DOM.
 14. **chrome_devtools_mastery**: Surgical debugging and performance auditing.
@@ -42,11 +42,11 @@
 ## ⚙️ SECTOR II: Backend Engineering
 *Ingeniería de servidor, lenguajes robustos y arquitectura de sistemas.*
 
-17. **php_modern_engineering**: **[v8.4 (2024)]** Mastering PHP 8.4, Composer, and JIT.
-18. **nodejs_backend_architect**: **[v23 (2024)]** Scalable Node.js architectures and event loops.
-19. **python_automation_expert**: **[v3.13 (2024)]** Advanced scripts, web scraping, and task automation.
-20. **golang_engineering**: **[v1.24 (2025)]** High-concurrency systems and microservices in Go.
-21. **rust_systems_expert**: **[1.84 (2025)]** Memory-safe, high-performance systems programming.
+17. **php_modern_engineering**: **[v8.5 (2026)]** Mastering PHP 8.4, Composer, and JIT.
+18. **nodejs_backend_architect**: **[v24 LTS (2026)]** Scalable Node.js architectures and event loops.
+19. **python_automation_expert**: **[v3.14 (2026)]** Advanced scripts, web scraping, and task automation.
+20. **golang_engineering**: **[v1.26 (2026)]** High-concurrency systems and microservices in Go.
+21. **rust_systems_expert**: **[1.92 (2026)]** Memory-safe, high-performance systems programming.
 22. **ruby_on_rails_architect**: Rapid development with modern Rails patterns.
 23. **elixir_concurrency**: Scalable, fault-tolerant systems with Erlang/OTP.
 24. **clean_architecture_master**: Decoupled, maintainable, and testable codebases.
