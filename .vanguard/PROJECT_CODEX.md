@@ -6,6 +6,7 @@
 - **Summit Assets**: `CONNECTED`
 
 ## 🧩 Project Specific Overrides
+
 > [!NOTE]
 > Cualquier comando `/remember` ejecutado aquí se sincronizará con el Codex Global a menos que se especifique `--local`.
 

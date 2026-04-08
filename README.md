@@ -11,6 +11,14 @@
 
 Este repositorio contiene el arsenal completo de inteligencia operativa del ecosistema **Vanguard**. Las habilidades han sido blindadas semánticamente y organizadas en 3 Meta-Bloques de alta densidad para optimización de contexto y ejecución autónoma.
 
+## 🧠 ARQUITECTURA DE MEMORIA & CONTEXTO
+
+Para evitar la amnesia de contexto y asegurar la integridad de la ruta, Vanguard implementa tres capas de memoria:
+
+1.  **Vanguard Master Codex**: [CODEX.md](file:///C:/Users/Rocka/.antigravity/vanguard_core/CODEX.md) - La Fuente Absoluta de Verdad Global (Reglas, Stack, Preferencias).
+2.  **Librarian Index**: [.vanguard/INDEX.md](file:///.vanguard/INDEX.md) - Mapa en tiempo real de la infraestructura del código para evitar alucinaciones de ruta.
+3.  **Project Codex**: [.vanguard/PROJECT_CODEX.md](file:///.vanguard/PROJECT_CODEX.md) - Instancia local de personalización técnica.
+
 ---
 
 <details>
@@ -240,8 +248,11 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 ## 🛠️ Protocolos de Comando
 
 - **Vanguard CLI**: `python vanguard.py` - Punto de entrada central optimizado.
+- `/build [task]`: **Vanguard Autopilot** - Ejecución agéntica metódica paso a paso.
+- `/map`: **Vanguard Librarian** - Escaneo y actualización del mapa de arquitectura en tiempo real.
+- `/remember [info]`: Inyección de conocimiento persistente en el Master Codex.
 - `/update`: Rutina de mantenimiento descentralizado Vanguard 175.
 - `/backup`: Sincronización blindada y automatizada a GitHub.
 - `/menu`: Interfaz de terminal Vanguard de alta densidad.
 
-**Vanguard Summit Terminal: ONLINE & FULLY INVENTORIED.**
+**Vanguard Summit Terminal: ONLINE & UNIVERSALIZED [Lvl 99]**
