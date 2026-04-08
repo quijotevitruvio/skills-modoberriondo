@@ -48,9 +48,10 @@ def main():
     elif cmd == "backup":
         print_banner()
         date_str = datetime.now().strftime('%Y-%m-%d')
-        msg = f"chore(vanguard): automated backup [{date_str}]"
-        run_command("git add .vanguard/ vanguard_skills/ vanguard.py ag_synergy_auditor.py README.md", "Preparación de Archivos")
-        run_command(f'git commit -m "{msg}"', "Firma de Soberanía")
+        msg = f"chore(vanguard): automated backup [{date_str}] - 192 skills milestone"
+        # Agregamos todos los archivos del nucleo y skills, incluyendo CHANGELOG
+        run_command("git add .vanguard/ vanguard_skills/ vanguard.py ag_synergy_auditor.py README.md CHANGELOG.md .agents/", "Preparación de Archivos")
+        run_command(f'git commit -m "{msg}" --allow-empty', "Firma de Soberanía")
         run_command("git push origin main", "Sincronización Cloud")
 
     elif cmd == "menu":
