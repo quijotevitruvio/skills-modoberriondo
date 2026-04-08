@@ -1,6 +1,9 @@
 # 🛡️ SkillsEmpanada: Vanguard Technical Sovereignty
 
-*Soberanía Técnica Total – Inventario Maestro de 210 Habilidades de Élite [Lvl 99]*
+*Soberanía Técnica Total – Inventario Maestro de 230 Habilidades de Élite [Vanguard Global Engine]*
+
+> [!IMPORTANT]
+> **Arquitectura Global**: Este repositorio es ahora una instancia vinculada al **Núcleo Vanguard Global** (`C:\Users\Rocka\.antigravity\vanguard_core`). Las habilidades listadas abajo son accesibles universalmente por Antigravity.
 
 ---
 
@@ -11,20 +14,21 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 ---
 
 <details>
-<summary><b>[I] SUMMIT: ENGINEERING - Cimiento y Construcción (94 Skills)</b></summary>
+<summary><b>[I] SUMMIT: ENGINEERING - Cimiento y Construcción (104 Skills)</b></summary>
+*Fuente Global:* [SUMMIT_I_ENGINEERING.md](file:///C:/Users/Rocka/.antigravity/vanguard_core/SUMMIT_I_ENGINEERING.md)
 
 ### 🏗️ SECTOR I: Frontend Architecture
-- **astro_expert**: **[v6.1 (2026)]** Performance-first web architecture using Islands and SSR.
-- **react_master_architect**: **[v19.x (2026)]** Advanced patterns for React 19, RSC, and state management.
+- **astro_expert**: **[v6.1.4 (2026)]** Performance-first web architecture using Islands and SSR.
+- **react_master_architect**: **[v19.2.4 (2026)]** Advanced patterns for React 19, RSC, and state management.
 - **preact_specialist**: High-performance, lightweight UI with Signals.
-- **nextjs_16_master**: **[v16.2 (2026)]** Mastering App Router, Server Actions, and PPR.
-- **tailwindcss_engine**: **[v4.2 (2026)]** Sophisticated design systems and JIT optimization.
-- **typescript_master**: **[v6.0 (2026)]** Complex type engineering and strict type safety.
+- **nextjs_16_master**: **[v16.2.2 (2026)]** Mastering App Router, Server Actions, and PPR.
+- **tailwindcss_engine**: **[v4.2.2 (2026)]** Sophisticated design systems and JIT optimization.
+- **typescript_master**: **[v6.0.2 (2026)]** Complex type engineering and strict type safety.
 - **ui_ux_design_systems**: Expert Figma-to-code and component architecture.
 - **css_modern_engine**: Advanced grids, flexbox, and browser performance.
 - **html_semantic_architect**: Web standards and accessibility optimization.
-- **vuejs_pro**: **[v3.6 (2026)]** Advanced Vue 3 composition API and performance.
-- **svelte_master**: **[v5.x (2026)]** Harnessing the compiler for ultra-fast interfaces.
+- **vuejs_pro**: **[v3.6.1 (2026)]** Advanced Vue 3 composition API and performance.
+- **svelte_master**: **[v5.2.0 (2026)]** Harnessing the compiler for ultra-fast interfaces.
 - **remix_architect**: Web-standards based fullstack development.
 - **solidjs_specialist**: Fine-grained reactivity without the virtual DOM.
 - **chrome_devtools_mastery**: Surgical debugging and performance auditing.
@@ -32,11 +36,11 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **vibe_coding_pro**: Ultra-fast prototyping by intent using LLMs.
 
 ### ⚙️ SECTOR II: Backend Engineering
-- **php_modern_engineering**: **[v8.5 (2026)]** Mastering PHP 8.4, Composer, and JIT.
-- **nodejs_backend_architect**: **[v24 LTS (2026)]** Scalable Node.js architectures and event loops.
-- **python_automation_expert**: **[v3.14 (2026)]** Advanced scripts, web scraping, and task automation.
-- **golang_engineering**: **[v1.26 (2026)]** High-concurrency systems and microservices in Go.
-- **rust_systems_expert**: **[1.92 (2026)]** Memory-safe, high-performance systems programming.
+- **php_modern_engineering**: **[v8.5.3 (2026)]** Mastering PHP 8.4, Composer, and JIT.
+- **nodejs_backend_architect**: **[v25.9.0 (2026)]** Scalable Node.js architectures and event loops.
+- **python_automation_expert**: **[v3.14.4 (2026)]** Advanced scripts, web scraping, and task automation.
+- **golang_engineering**: **[v1.26.1 (2026)]** High-concurrency systems and microservices in Go.
+- **rust_systems_expert**: **[1.92.0 (2026)]** Memory-safe, high-performance systems programming.
 - **ruby_on_rails_architect**: Rapid development with modern Rails patterns.
 - **elixir_concurrency**: Scalable, fault-tolerant systems with Erlang/OTP.
 - **clean_architecture_master**: Decoupled, maintainable, and testable codebases.
@@ -118,11 +122,26 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **monorepo_orchestration**: Managing massive repos with Lerna, Nx, and Turborepo.
 - **gitops_infra_continuous_sync**: Bridging infrastructure state with Git transitions.
 - **vanguard_legacy_refactor**: Surgical migration of monoliths to Vanguard architectures.
+- **spatial_mesh_reconstruction**: **[v2.0.1 (2026)]** LIDAR-to-mesh optimization for Vision Pro.
+
+### 🏗️ SECTOR VII: Spatial & Industrial Computing
+- **spatial_workflow_architect**: **[v2.1.0 (2026)]** Designing industrial workflows for AR/VR/Spatial SDKs.
+- **digital_twin_synchronizer**: **[v3.0.1 (2026)]** Real-time sync between physical assets and digital models.
+- **vision_os_pro_engineering**: **[v2.2.4 (2026)]** Advanced development for VisionOS 2 and ecosystems.
+- **unreal_engine_industrial_sim**: **[v5.6.2 (2026)]** High-fidelity physics simulations for enterprise.
+
+### 🧪 SECTOR VIII: Quantum-Classical Engineering
+- **hybrid_quantum_orchestrator**: **[v1.2.0 (2026)]** Managing workflows between classical and quantum processors.
+- **quantum_algorithm_optimization**: **[v2.1.3 (2026)]** Fine-tuning Q# for chemistry and logistics.
+- **cryogenic_hardware_interfaces**: **[v1.0.0 (2026)]** Software-to-Hardware bridge for quantum stability.
+- **post_quantum_migrate_master**: **[v2.4.1 (2026)]** Transitioning enterprise security to PQ-standards.
+- **quantum_error_correction_logic**: **[v1.5.2 (2026)]** Implementing logical qubits via software.
 
 </details>
 
 <details>
-<summary><b>[II] SUMMIT: TACTICAL - Operaciones y Crecimiento (80 Skills)</b></summary>
+<summary><b>[II] SUMMIT: TACTICAL - Operaciones y Crecimiento (85 Skills)</b></summary>
+*Fuente Global:* [SUMMIT_II_TACTICAL.md](file:///C:/Users/Rocka/.antigravity/vanguard_core/SUMMIT_II_TACTICAL.md)
 
 ### 📈 SECTOR VII: SEO & Growth Marketing
 - **technical_seo_expert**: Advanced indexing, crawling, and site structure.
@@ -145,13 +164,13 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **omnichannel_marketing_loops**: Orchestrated retention across Email, SMS, WA.
 
 ### 💬 SECTOR VIII: WhatsApp CRM & Enterprise
-- **enterprise_whatsapp_chatbot_expert**: **[v23.0 (2026)]** WABA Cloud API, Agentic AI, and Complex CRM Integration.
+- **enterprise_whatsapp_chatbot_expert**: **[v23.0.4 (2026)]** WABA Cloud API, Agentic AI, and Complex CRM Integration.
 - **whatsapp_flows_logic_engineering**: Designing interactive UI (Flows, Lists, Buttons) in-chat.
 - **payment_catalog_native_automation**: Seamless native checkout and real-time inventory sync.
 - **conversational_analytics_cx_expert**: Advanced metrics (ROI, RPC, Sentiment) for chat.
 
 ### 🔋 SECTOR IX: AI Efficiency & Tokenomics
-- **claude_efficiency_prompt_engineering**: **[v4 (2026)]** Mastering Prompt Caching, prefix-matching, and cache-control.
+- **claude_efficiency_prompt_engineering**: **[v4.0.1 (2026)]** Mastering Prompt Caching, prefix-matching, and cache-control.
 - **token_econometrics_expert**: Financial token management and usage governance.
 - **few_shot_context_compression**: High-density example injection and semantic pruning.
 - **llm_performance_auditor**: Benchmarking TTFT, TPS, and provider quality drift.
@@ -164,7 +183,7 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **fintech_ledger_systems**: Double-entry bookkeeping and transactional integrity.
 - **alegra_erp_integration**: Full automation of invoicing and cloud accounting.
 - **dian_colombia_compliance**: Official Colombia invoice standards (XML/CUFE).
-- **postgresql_advanced**: **[v18 (2026)]** Mastering pgVector, partitioning, and scaling.
+- **postgresql_advanced**: **[v18.3 (2026)]** Mastering pgVector, partitioning, and scaling.
 - **vanguard_master_engine**: The core orchestrator for internal and external systems.
 
 ### 🎮 SECTOR XI: Antigravity Mastery & Vibe Coding
@@ -177,10 +196,18 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **abu_fullstack_orchestration**: Goal-driven management of independent digital business units.
 - **sovereign_saas_forge**: Rapid launch protocols for multi-tenant, compliant SaaS.
 
+### ⛓️ SECTOR XVI: DeAI & Autonomous Infrastructure
+- **decentralized_compute_orchestrator**: **[v2.1.0 (2026)]** Managing GPU clusters for AI on DePIN networks.
+- **federated_learning_privacy**: **[v3.2.1 (2026)]** Training models on decentralized data without leaks.
+- **ai_agent_identity_governance**: **[v2.0.0 (2026)]** Secure identity (DID/VC) for autonomous agents.
+- **tokenomic_system_architect**: **[v4.1.2 (2026)]** Designing sustainable value flows for networks.
+- **decentralized_storage_mastery**: **[v5.0.1 (2026)]** Filecoin/Arweave at enterprise scale (DePIN).
+
 </details>
 
 <details>
-<summary><b>[III] SUMMIT: DOMINATION - Monetización y Escala (36 Skills)</b></summary>
+<summary><b>[III] SUMMIT: DOMINATION - Monetización y Escala (41 Skills)</b></summary>
+*Fuente Global:* [SUMMIT_III_DOMINATION.md](file:///C:/Users/Rocka/.antigravity/vanguard_core/SUMMIT_III_DOMINATION.md)
 
 ### 💰 SECTOR XIII: Crypto Wealth & Binance Mastery
 - **defi_yield_farming_optimization**: Maximización de APY mediante auto-compounding.
@@ -196,8 +223,15 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **subscription_engine_architecture**: Ingeniería de muros de pago y tiers dinámicos.
 - **secure_video_streaming_vod**: Pipelines de video con trascodificación adaptativa y DRM.
 - **webrtc_low_latency_streaming**: Video en tiempo real con latencia sub-segundo.
-- **meilisearch_high_speed_indexing**: **[v1.14 (2026)]** Búsqueda instantánea para millones de registros.
+- **meilisearch_high_speed_indexing**: **[v1.14.2 (2026)]** Búsqueda instantánea para millones de registros.
 - **horizontal_scaling_orchestrator**: Automatización elástica para picos de tráfico masivo.
+
+### 👑 SECTOR XVII: Frontier Domination
+- **bci_data_protocol_architect**: **[v1.8.2 (2026)]** Brain-Computer Interface signal processing logic.
+- **synthetic_bio_automation_logic**: **[v2.1.1 (2026)]** CRISPR automation and Lab-on-a-Chip logic.
+- **autonomous_business_unit_architect**: **[v3.0.0 (2026)]** Designing self-funding Digital Entities (ABUs).
+- **predictive_sovereignty_scenarios**: **[v4.2.3 (2026)]** AI-driven geopolitical and market simulation.
+- **neuromorphic_ai_training**: **[v1.2.0 (2026)]** Backpropagation for SNN (Spiking Neural Networks).
 
 </details>
 
