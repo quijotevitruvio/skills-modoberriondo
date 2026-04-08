@@ -54,6 +54,11 @@ def run_audit():
             "id": "INVITUS_FINANCE",
             "modulos": "X, XIII, XI",
             "desc": "Soberanía Financiera: FinTech + Crypto Wealth + Orquestación Agéntica."
+        },
+        {
+            "id": "BINANCE_DOMINANCE",
+            "modulos": "XIII, X, VI",
+            "desc": "Control de Ecosistema: Binance Mastery + FinTech + Git Infrastructure."
         }
     ]
 
