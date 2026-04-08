@@ -59,6 +59,16 @@ def run_audit():
             "id": "BINANCE_DOMINANCE",
             "modulos": "XIII, X, VI",
             "desc": "Control de Ecosistema: Binance Mastery + FinTech + Git Infrastructure."
+        },
+        {
+            "id": "SOVEREIGN_PLATFORM_FORGE",
+            "modulos": "II, XV, XIII",
+            "desc": "Gran Forja: Backend Élite + Plataformas de Alto Impacto + Crypto Riqueza."
+        },
+        {
+            "id": "SOCIAL_AUTHORITY_ENG",
+            "modulos": "VII, XIV, III",
+            "desc": "Ingeniería de Influencia: SEO + Autoridad Social + IA 2025."
         }
     ]
 
