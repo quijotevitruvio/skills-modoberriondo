@@ -49,6 +49,11 @@ def run_audit():
             "id": "OFENSIVA_SEO_GROWTH",
             "modulos": "VII, VIII, IX",
             "desc": "Dominio de Tráfico: SEO Programático + WhatsApp CRM + Econometría."
+        },
+        {
+            "id": "INVITUS_FINANCE",
+            "modulos": "X, XIII, XI",
+            "desc": "Soberanía Financiera: FinTech + Crypto Wealth + Orquestación Agéntica."
         }
     ]
 
