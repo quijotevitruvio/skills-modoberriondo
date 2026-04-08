@@ -10,64 +10,64 @@ BLOCKS_DIR = ".vanguard"
 
 def print_banner():
     banner = f"""
-    [ 🛡️ ALERTA DE SOBERANÍA: AUDITOR DE SINERGIAS ]
-    ----------------------------------------------
+    [ 🛡️ ALERTA DE SOBERANÍA: AUDITOR DE SINERGIAS SUMMIT ]
+    -----------------------------------------------------
     Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-    Estado: Escaneando arsenal Vanguard 175...
+    Estado: Escaneando arquitectura High-Density (210 Habilidades)
     """
     print(banner)
 
 def get_blocks():
     if not os.path.exists(BLOCKS_DIR):
         return []
-    return [f for f in os.listdir(BLOCKS_DIR) if f.startswith("Block_") and f.endswith(".md")]
+    return [f for f in os.listdir(BLOCKS_DIR) if f.startswith("SUMMIT_") and f.endswith(".md")]
 
 def run_audit():
     print_banner()
     blocks = get_blocks()
     
     if not blocks:
-        print("[!] ERROR: Matriz de bloques no detectada en .vanguard/")
+        print("[!] ERROR: Arquitectura SUMMIT no detectada en .vanguard/")
         return
 
-    print(f"[+] {len(blocks)} Bloques de Soberanía vinculados al núcleo.")
-    print("[+] Generando diagnóstico de sinergias para despliegue inmediato...\n")
+    print(f"[+] {len(blocks)} Meta-Bloques SUMMIT vinculados al núcleo.")
+    print("[+] Generando diagnóstico de sinergias de alta densidad...\n")
 
-    # Definición de Combos de Élite
+    # Definición de Combos de Élite (Mapeo SUMMIT)
     combos = [
         {
             "id": "FORJA_FULLSTACK",
-            "modulos": "I, II, IV",
-            "desc": "Infraestructura SaaS completa: Frontend + Backend + DevOps."
+            "modulos": "SUMMIT_I",
+            "desc": "Infraestructura SaaS completa: Backend + Cimiento + DevOps."
         },
         {
             "id": "NEXO_INTEGRADO_IA",
-            "modulos": "III, XI, XII",
-            "desc": "Inteligencia Agéntica: Modelos 2025 + ABUs Autónomas."
+            "modulos": "SUMMIT_I, SUMMIT_II",
+            "desc": "Inteligencia Agéntica: IA 2025 + Orquestación Agéntica + ABUs."
         },
         {
             "id": "OFENSIVA_SEO_GROWTH",
-            "modulos": "VII, VIII, IX",
+            "modulos": "SUMMIT_II",
             "desc": "Dominio de Tráfico: SEO Programático + WhatsApp CRM + Econometría."
         },
         {
             "id": "INVITUS_FINANCE",
-            "modulos": "X, XIII, XI",
+            "modulos": "SUMMIT_II, SUMMIT_III",
             "desc": "Soberanía Financiera: FinTech + Crypto Wealth + Orquestación Agéntica."
         },
         {
             "id": "BINANCE_DOMINANCE",
-            "modulos": "XIII, X, VI",
-            "desc": "Control de Ecosistema: Binance Mastery + FinTech + Git Infrastructure."
+            "modulos": "SUMMIT_II, SUMMIT_III",
+            "desc": "Control de Ecosistema: Binance Mastery + FinTech + Infraestructura."
         },
         {
             "id": "SOVEREIGN_PLATFORM_FORGE",
-            "modulos": "II, XV, XIII",
-            "desc": "Gran Forja: Backend Élite + Plataformas de Alto Impacto + Crypto Riqueza."
+            "modulos": "SUMMIT_I, SUMMIT_III",
+            "desc": "Gran Forja: Backend Élite + Plataformas de Alto Impacto + Riqueza."
         },
         {
             "id": "SOCIAL_AUTHORITY_ENG",
-            "modulos": "VII, XIV, III",
+            "modulos": "SUMMIT_I, SUMMIT_II, SUMMIT_III",
             "desc": "Ingeniería de Influencia: SEO + Autoridad Social + IA 2025."
         }
     ]

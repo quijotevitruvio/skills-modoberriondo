@@ -48,21 +48,22 @@ def main():
     elif cmd == "backup":
         print_banner()
         date_str = datetime.now().strftime('%Y-%m-%d')
-        msg = f"chore(vanguard): automated backup [{date_str}] - 192 skills milestone"
-        # Agregamos todos los archivos del nucleo y skills, incluyendo CHANGELOG
-        run_command("git add .vanguard/ vanguard_skills/ vanguard.py ag_synergy_auditor.py README.md CHANGELOG.md .agents/", "Preparación de Archivos")
+        msg = f"chore(vanguard): automated backup [{date_str}] - High-Density 210 skills"
+        # Agregamos los Meta-Bloques SUMMIT y archivos core
+        run_command("git add .vanguard/SUMMIT_*.md vanguard_skills/ vanguard.py ag_synergy_auditor.py README.md CHANGELOG.md .agents/", "Preparación de Archivos")
         run_command(f'git commit -m "{msg}" --allow-empty', "Firma de Soberanía")
         run_command("git push origin main", "Sincronización Cloud")
 
     elif cmd == "menu":
-        # Simula el trigger del menú
+        # Simula el trigger del menú interactivo Vanguard
         print("""
-### 🛡️ TERMINAL DEL SISTEMA VANGUARD
-*Entorno Cargado. Esperando comando...*
+### 🛡️ TERMINAL DEL SISTEMA VANGUARD - ARQUITECTURA SUMMIT
+*Entorno Cargado. Orquestación de Alta Densidad (210 Habilidades)*
 
-**[ 📚 MÓDULOS CORE DISPONIBLES ]**
-`[I] Frontend` | `[II] Backend` | `[III] IA 2025` | `[IV] DevOps` | `[V] Terminal` | `[VI] Git` 
-`[VII] SEO y Crecimiento` | `[VIII] WhatsApp CRM` | `[IX] Econometría IA` | `[X] FinTech` | `[XI] Agéntico`
+**[ 🏛️ META-BLOQUES DISPONIBLES ]**
+`[I] SUMMIT_ENGINEERING`  : Cimiento, Backend, IA, DevOps, Terminal, Git.
+`[II] SUMMIT_TACTICAL`     : SEO, Growth, CRM, FinTech, IA Efficiency, Frontier.
+`[III] SUMMIT_DOMINATION` : Crypto Wealth, Social Authority, High-Scale Platforms.
 
 **Escribe 'python vanguard.py <comando>' para operar.**
         """)
