@@ -1,0 +1,45 @@
+{
+  "Comment": "Vanguard Lead Processing Workflow (Phase 13)",
+  "StartAt": "ExtractLeadData",
+  "States": {
+    "ExtractLeadData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:region:account-id:function:ExtractLeadFunc",
+      "Next": "IsLeadQualified"
+    },
+    "IsLeadQualified": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.score",
+          "NumericGreaterThanEquals": 80,
+          "Next": "ProcessHotLead"
+        }
+      ],
+      "Default": "AddtoNurtureSequence"
+    },
+    "ProcessHotLead": {
+        "Type": "Parallel",
+        "Branches": [
+            {
+                "StartAt": "NotifyWhatsApp",
+                "States": {
+                    "NotifyWhatsApp": { "Type": "Task", "Resource": "...", "End": true }
+                }
+            },
+            {
+                "StartAt": "CreateCRMDeal",
+                "States": {
+                    "CreateCRMDeal": { "Type": "Task", "Resource": "...", "End": true }
+                }
+            }
+        ],
+        "End": true
+    },
+    "AddtoNurtureSequence": {
+      "Type": "Task",
+      "Resource": "...",
+      "End": true
+    }
+  }
+}

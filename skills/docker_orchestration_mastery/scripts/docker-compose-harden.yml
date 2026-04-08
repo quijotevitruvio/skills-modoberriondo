@@ -1,0 +1,49 @@
+# Level 99 Docker Orchestration: Hardened App Stack
+version: '3.8'
+
+services:
+  # 🏢 Application Logic (Node.js)
+  lia-crm-app:
+    build: .
+    container_name: lia_crm_app
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=db
+      - REDIS_HOST=cache
+    ports:
+      - "3000:3000"
+    user: node # Run as non-root
+    networks:
+      - app-tier
+    depends_on:
+      - db
+      - cache
+
+  # 🗄️ Database (PostgreSQL)
+  db:
+    image: postgres:16-alpine
+    container_name: postgres_db
+    restart: always
+    environment:
+      - POSTGRES_DB=lia_crm
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-tier
+
+  # ⚡ Cache (Redis)
+  cache:
+    image: redis:7-alpine
+    container_name: redis_cache
+    restart: always
+    networks:
+      - app-tier
+
+networks:
+  app-tier:
+    driver: bridge # Isolated network for app communication
+
+volumes:
+  postgres_data:

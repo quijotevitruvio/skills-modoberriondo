@@ -1,0 +1,8 @@
+{
+  "name": "vanguard-skill-node",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "latest-version": "latest"
+  }
+}

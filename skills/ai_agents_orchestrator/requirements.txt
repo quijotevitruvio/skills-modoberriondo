@@ -1,0 +1,6 @@
+openai
+langchain
+langgraph
+crewai
+python-dotenv
+chromadb

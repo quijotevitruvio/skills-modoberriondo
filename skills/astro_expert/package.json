@@ -1,0 +1,10 @@
+{
+  "name": "vanguard-astro",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "astro": "latest",
+    "@astrojs/react": "latest",
+    "sharp": "latest"
+  }
+}

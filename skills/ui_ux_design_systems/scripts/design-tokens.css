@@ -1,0 +1,41 @@
+/* Level 99 Design Tokens & Glassmorphism Framework */
+:root {
+  /* 🎨 Premium Color Scale (Slate/Blue) */
+  --color-primary: #3b82f6;
+  --color-accent: #6366f1;
+  --color-bg: #0f172a;
+  --color-surface: rgba(30, 41, 59, 0.7);
+  --color-border: rgba(255, 255, 255, 0.05);
+
+  /* ✨ Glassmorphism Effect */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-blur: blur(12px);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* 📏 Spacing System (8px Grid) */
+  --space-unit: 8px;
+  --space-xs: calc(var(--space-unit) * 0.5);
+  --space-sm: var(--space-unit);
+  --space-md: calc(var(--space-unit) * 2);
+  --space-lg: calc(var(--space-unit) * 4);
+
+  /* 🎬 High-End Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms var(--ease);
+  --transition-normal: 300ms var(--ease);
+  --transition-slow: 600ms var(--ease);
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 12px;
+  transition: transform var(--transition-normal);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}

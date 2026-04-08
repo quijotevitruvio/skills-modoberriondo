@@ -1,0 +1,98 @@
+{
+  "name": "Global Error Handler (Vanguard 45)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "error-trigger",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "content": "## Identificar Error\nObtiene el nombre del nodo fallido y el mensaje de error para diagnóstico rápido."
+      },
+      "id": "note-1",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [450, 200]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "node_name",
+              "value": "={{ $node[\"Error Trigger\"].json[\"execution\"][\"node\"] }}"
+            },
+            {
+              "name": "error_message",
+              "value": "={{ $node[\"Error Trigger\"].json[\"execution\"][\"error\"][\"message\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "set-error-data",
+      "name": "Set Error Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.whatsapp.com/send",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{ $env.WHATSAPP_TOKEN }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "🚨 *CRITICAL ERROR* in Workflow: {{ $workflow.name }} | Node: {{ $node[\"Set Error Data\"].json[\"node_name\"] }} | Reason: {{ $node[\"Set Error Data\"].json[\"error_message\"] }}"
+            }
+          ]
+        }
+      },
+      "id": "send-alert",
+      "name": "Send WhatsApp Alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [750, 300]
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set Error Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Error Data": {
+      "main": [
+        [
+          {
+            "node": "Send WhatsApp Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

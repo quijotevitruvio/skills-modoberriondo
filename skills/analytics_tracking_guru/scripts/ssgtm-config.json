@@ -1,0 +1,46 @@
+{
+  "name": "Vanguard Server Container (Phase 13)",
+  "containerId": "GTM-VANGUARD-SS",
+  "environment": {
+    "type": "Cloud Run",
+    "region": "us-central1",
+    "minInstances": 1,
+    "maxInstances": 10
+  },
+  "logic": {
+    "clients": [
+      {
+        "name": "GA4 Client",
+        "priority": 10,
+        "config": { "path": "/g/collect" }
+      }
+    ],
+    "tags": [
+      {
+        "name": "BigQuery Raw Stream",
+        "type": "big_query",
+        "params": {
+          "dataset": "analytics_raw",
+          "table": "events_stream",
+          "mapping": "full_payload"
+        }
+      },
+      {
+        "name": "Meta CAPI (Enhanced)",
+        "type": "meta_capi",
+        "params": {
+          "testMode": false,
+          "piiMasking": true,
+          "deduplication": "event_id"
+        }
+      }
+    ],
+    "variables": [
+      {
+        "name": "First-Party Cookie ID",
+        "type": "fp_cookie",
+        "params": { "cookieName": "_v_id" }
+      }
+    ]
+  }
+}
