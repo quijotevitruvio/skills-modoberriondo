@@ -14,17 +14,17 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 <summary><b>[I] SUMMIT: ENGINEERING - Cimiento y Construcción (94 Skills)</b></summary>
 
 ### 🏗️ SECTOR I: Frontend Architecture
-- **astro_expert**: [██████████] Lvl 99 - Performance-first web architecture using Islands and SSR.
-- **react_master_architect**: [██████████] Lvl 99 - Advanced patterns for React 19, RSC, and state management.
+- **astro_expert**: [██████████] Lvl 99 - **[v5 (2025)]** Performance-first web architecture using Islands and SSR.
+- **react_master_architect**: [██████████] Lvl 99 - **[v19 (2024)]** Advanced patterns for React 19, RSC, and state management.
 - **preact_specialist**: [██████████] Lvl 99 - High-performance, lightweight UI with Signals.
-- **nextjs_15_master**: [██████████] Lvl 99 - Mastering App Router, Server Actions, and PPR.
-- **tailwindcss_engine**: [██████████] Lvl 99 - Sophisticated design systems and JIT optimization.
-- **typescript_master**: [██████████] Lvl 99 - Complex type engineering and strict type safety.
+- **nextjs_15_master**: [██████████] Lvl 99 - **[v15 (2024)]** Mastering App Router, Server Actions, and PPR.
+- **tailwindcss_engine**: [██████████] Lvl 99 - **[v4 (2025)]** Sophisticated design systems and JIT optimization.
+- **typescript_master**: [██████████] Lvl 99 - **[v5.7 (2024)]** Complex type engineering and strict type safety.
 - **ui_ux_design_systems**: [██████████] Lvl 99 - Expert Figma-to-code and component architecture.
 - **css_modern_engine**: [██████████] Lvl 99 - Advanced grids, flexbox, and browser performance.
 - **html_semantic_architect**: [██████████] Lvl 99 - Web standards and accessibility optimization.
-- **vuejs_pro**: [██████████] Lvl 99 - Advanced Vue 3 composition API and performance.
-- **svelte_master**: [██████████] Lvl 99 - Harnessing the compiler for ultra-fast interfaces.
+- **vuejs_pro**: [██████████] Lvl 99 - **[v3.5 (2024)]** Advanced Vue 3 composition API and performance.
+- **svelte_master**: [██████████] Lvl 99 - **[v5 (2024)]** Harnessing the compiler for ultra-fast interfaces.
 - **remix_architect**: [██████████] Lvl 99 - Web-standards based fullstack development.
 - **solidjs_specialist**: [██████████] Lvl 99 - Fine-grained reactivity without the virtual DOM.
 - **chrome_devtools_mastery**: [██████████] Lvl 99 - Surgical debugging and performance auditing.
@@ -32,11 +32,11 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **vibe_coding_pro**: [██████████] Lvl 99 - Ultra-fast prototyping by intent using LLMs.
 
 ### ⚙️ SECTOR II: Backend Engineering
-- **php_modern_engineering**: [██████████] Lvl 99 - Mastering PHP 8.4, Composer, and JIT.
-- **nodejs_backend_architect**: [██████████] Lvl 99 - Scalable Node.js architectures and event loops.
-- **python_automation_expert**: [██████████] Lvl 99 - Advanced scripts, web scraping, and task automation.
-- **golang_engineering**: [██████████] Lvl 99 - High-concurrency systems and microservices in Go.
-- **rust_systems_expert**: [██████████] Lvl 99 - Memory-safe, high-performance systems programming.
+- **php_modern_engineering**: [██████████] Lvl 99 - **[v8.4 (2024)]** Mastering PHP 8.4, Composer, and JIT.
+- **nodejs_backend_architect**: [██████████] Lvl 99 - **[v23 (2024)]** Scalable Node.js architectures and event loops.
+- **python_automation_expert**: [██████████] Lvl 99 - **[v3.13 (2024)]** Advanced scripts, web scraping, and task automation.
+- **golang_engineering**: [██████████] Lvl 99 - **[v1.24 (2025)]** High-concurrency systems and microservices in Go.
+- **rust_systems_expert**: [██████████] Lvl 99 - **[1.84 (2025)]** Memory-safe, high-performance systems programming.
 - **ruby_on_rails_architect**: [██████████] Lvl 99 - Rapid development with modern Rails patterns.
 - **elixir_concurrency**: [██████████] Lvl 99 - Scalable, fault-tolerant systems with Erlang/OTP.
 - **clean_architecture_master**: [██████████] Lvl 99 - Decoupled, maintainable, and testable codebases.
@@ -128,8 +128,8 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **technical_seo_expert**: [██████████] Lvl 99 - Advanced indexing, crawling, and site structure.
 - **programmatic_seo_expert**: [██████████] Lvl 99 - Building thousands of optimized pages via data.
 - **schema_markup_guru**: [██████████] Lvl 99 - Mastering JSON-LD for rich snippets and entities.
-- **rankmath_seo_mastery**: [██████████] Lvl 99 - Deep configuration for WordPress SEO.
-- **google_search_console_mastery**: [██████████] Lvl 99 - Analyzing and fixing performance at scale.
+- **rankmath_seo_mastery**: [██████████] Lvl 99 - **[v1.0.2xx (2025)]** Deep configuration for WordPress SEO.
+- **google_search_console_mastery**: [██████████] Lvl 99 - **[2025]** Analyzing and fixing performance at scale.
 - **cro_scientist**: [██████████] Lvl 99 - Conversion Rate Optimization and A/B testing.
 - **analytics_tracking_guru**: [██████████] Lvl 99 - GA4, GTM, and server-side tracking.
 - **google_ads_architect**: [██████████] Lvl 99 - Designing high-ROI search and display campaigns.
@@ -145,13 +145,13 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **omnichannel_marketing_loops**: [██████████] Lvl 99 - Orchestrated retention across Email, SMS, WA.
 
 ### 💬 SECTOR VIII: WhatsApp CRM & Enterprise
-- **enterprise_whatsapp_chatbot_expert**: [██████████] Lvl 99 - WABA Cloud API, Agentic AI, and Complex CRM Integration.
+- **enterprise_whatsapp_chatbot_expert**: [██████████] Lvl 99 - **[v21.0 (2024)]** WABA Cloud API, Agentic AI, and Complex CRM Integration.
 - **whatsapp_flows_logic_engineering**: [██████████] Lvl 99 - Designing interactive UI (Flows, Lists, Buttons) in-chat.
 - **payment_catalog_native_automation**: [██████████] Lvl 99 - Seamless native checkout and real-time inventory sync.
 - **conversational_analytics_cx_expert**: [██████████] Lvl 99 - Advanced metrics (ROI, RPC, Sentiment) for chat.
 
 ### 🔋 SECTOR IX: AI Efficiency & Tokenomics
-- **claude_efficiency_prompt_engineering**: [██████████] Lvl 99 - Mastering Prompt Caching, prefix-matching, and cache-control.
+- **claude_efficiency_prompt_engineering**: [██████████] Lvl 99 - **[v3.5 (2024)]** Mastering Prompt Caching, prefix-matching, and cache-control.
 - **token_econometrics_expert**: [██████████] Lvl 99 - Financial token management and usage governance.
 - **few_shot_context_compression**: [██████████] Lvl 99 - High-density example injection and semantic pruning.
 - **llm_performance_auditor**: [██████████] Lvl 99 - Benchmarking TTFT, TPS, and provider quality drift.
@@ -164,7 +164,7 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **fintech_ledger_systems**: [██████████] Lvl 99 - Double-entry bookkeeping and transactional integrity.
 - **alegra_erp_integration**: [██████████] Lvl 99 - Full automation of invoicing and cloud accounting.
 - **dian_colombia_compliance**: [██████████] Lvl 99 - Official Colombia invoice standards (XML/CUFE).
-- **postgresql_advanced**: [██████████] Lvl 99 - Mastering pgVector, partitioning, and scaling.
+- **postgresql_advanced**: [██████████] Lvl 99 - **[v17 (2024)]** Mastering pgVector, partitioning, and scaling.
 - **vanguard_master_engine**: [██████████] Lvl 99 - The core orchestrator for internal and external systems.
 
 ### 🎮 SECTOR XI: Antigravity Mastery & Vibe Coding
@@ -185,7 +185,7 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 ### 💰 SECTOR XIII: Crypto Wealth & Binance Mastery
 - **defi_yield_farming_optimization**: [██████████] Lvl 99 - Maximización de APY mediante auto-compounding.
 - **arbitrage_bot_architecture**: [██████████] Lvl 99 - Bots de alta velocidad para arbitraje DEX-DEX.
-- **binance_api_orchestration**: [██████████] Lvl 99 - Dominio del SDK de Binance para trading algorítmico.
+- **binance_api_orchestration**: [██████████] Lvl 99 - **[SDK 2025]** Dominio del SDK de Binance para trading algorítmico.
 - **bsc_node_operations**: [██████████] Lvl 99 - Operación de nodos rpc para ejecución prioritaria.
 
 ### 👑 SECTOR XIV: Social Authority Engineering
@@ -196,7 +196,7 @@ Este repositorio contiene el arsenal completo de inteligencia operativa del ecos
 - **subscription_engine_architecture**: [██████████] Lvl 99 - Ingeniería de muros de pago y tiers dinámicos.
 - **secure_video_streaming_vod**: [██████████] Lvl 99 - Pipelines de video con trascodificación adaptativa y DRM.
 - **webrtc_low_latency_streaming**: [██████████] Lvl 99 - Video en tiempo real con latencia sub-segundo.
-- **meilisearch_high_speed_indexing**: [██████████] Lvl 99 - Búsqueda instantánea para millones de registros.
+- **meilisearch_high_speed_indexing**: [██████████] Lvl 99 - **[v1.12 (2025)]** Búsqueda instantánea para millones de registros.
 - **horizontal_scaling_orchestrator**: [██████████] Lvl 99 - Automatización elástica para picos de tráfico masivo.
 
 </details>

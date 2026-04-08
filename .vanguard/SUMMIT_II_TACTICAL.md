@@ -19,8 +19,8 @@
 95. **technical_seo_expert**: Advanced indexing, crawling, and site structure.
 96. **programmatic_seo_expert**: Building thousands of optimized pages via data.
 97. **schema_markup_guru**: Mastering JSON-LD for rich snippets and entities.
-98. **rankmath_seo_mastery**: Deep configuration for WordPress SEO.
-99. **google_search_console_mastery**: Analyzing and fixing performance at scale.
+98. **rankmath_seo_mastery**: **[v1.0.2xx (2025)]** Deep configuration for WordPress SEO.
+99. **google_search_console_mastery**: **[2025]** Analyzing and fixing performance at scale.
 100. **cro_scientist**: Conversion Rate Optimization and A/B testing.
 101. **analytics_tracking_guru**: GA4, GTM, and server-side tracking.
 102. **google_ads_architect**: Designing high-ROI search and display campaigns.
@@ -44,7 +44,7 @@
 ## 💬 SECTOR VIII: WhatsApp CRM & Enterprise
 *Automatización conversacional de grado enterprise y WABA Cloud API.*
 
-113. **enterprise_whatsapp_chatbot_expert**: WABA Cloud API, Agentic AI, and Complex CRM Integration.
+113. **enterprise_whatsapp_chatbot_expert**: **[v21.0 (2024)]** WABA Cloud API, Agentic AI, and Complex CRM Integration.
 114. **whatsapp_flows_logic_engineering**: Designing interactive UI (Flows, Lists, Buttons) in-chat.
 115. **payment_catalog_native_automation**: Seamless native checkout and real-time inventory sync.
 116. **conversational_analytics_cx_expert**: Advanced metrics (ROI, RPC, Sentiment) for chat.
@@ -58,7 +58,7 @@
 ## 🔋 SECTOR IX: AI Efficiency & Tokenomics
 *Optimización de costos LLM, Prompt Caching y gobernanza de tokens.*
 
-117. **claude_efficiency_prompt_engineering**: Mastering Prompt Caching, prefix-matching, and cache-control.
+117. **claude_efficiency_prompt_engineering**: **[v3.5 (2024)]** Mastering Prompt Caching, prefix-matching, and cache-control.
 118. **token_econometrics_expert**: Financial token management, break-even analysis, and usage governance.
 119. **few_shot_context_compression**: High-density example injection and semantic pruning.
 120. **llm_performance_auditor**: Benchmarking TTFT, TPS, and provider quality drift.
@@ -101,7 +101,7 @@
 147. **ar_vr_spatial_computing**: UI/UX for immersive interfaces.
 148. **whatsapp_automation_pro**: Advanced flows and bot management.
 149. **enterprise_resilience**: Disaster recovery and continuity planning.
-150. **postgresql_advanced**: Mastering pgVector, partitioning, and scaling.
+150. **postgresql_advanced**: **[v17 (2024)]** Mastering pgVector, partitioning, and scaling.
 151. **mysql_master**: High-traffic database tuning and optimization.
 152. **sql_postgresql_tuning**: Surgical query optimization and index engineering.
 153. **redis_hybrid_cache**: Speed layer with pub/sub and specialized structures.
