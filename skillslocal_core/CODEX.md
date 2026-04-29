@@ -7,78 +7,51 @@ Este documento es la **Ancla de Memoria Suprema**. Antigravity está programado 
 
 ## 📜 CODEX MAESTRO: SKILLSLOCAL
 
-## 💠 ARQUITECTURA NUCLEAR (v2.0)
-El ecosistema ha sido fragmentado en **8 Sectores Operativos** para maximizar la densidad de información y minimizar el consumo de tokens. Cada sector actúa como un "módulo de consciencia" independiente.
+## 💠 ARQUITECTURA NUCLEAR (v2.5)
+El ecosistema utiliza una estructura de **8 Sectores Operativos** y un **Córtex Neuronal (`CEREBRO.json`)** para maximizar la densidad de información.
 
-### 🛰️ Los 8 Sectores Nucleares
-1.  **`00_NUCLEO`**: Orquestación y lenguajes base. Siempre activo.
-2.  **`01_INGENIERIA_WEB`**: Desarrollo moderno, WP, Woo y WhatsApp.
-3.  **`02_IA_AGENTE`**: El cerebro de la IA, agentes y automatización cognitiva.
-4.  **`03_INFRAESTRUCTURA_DATOS`**: Servidores, bases de datos y escalabilidad.
-5.  **`04_CIBERSEGURIDAD_OSINT`**: Seguridad, investigación y protección.
-6.  **`05_CRECIMIENTO_FINTECH`**: SEO, Ads, Pagos y Blockchain.
-7.  **`06_FRONTERA_TECNOLOGICA`**: Tecnologías emergentes (Quantum, AR/VR).
-8.  **`07_ARCHIVO`**: Legado y tecnologías de baja frecuencia.
-
-## 🛠️ PROTOCOLO DE DESPERTAR
-Para iniciar cualquier sesión de alta ingeniería:
-1.  **Sincronizar**: `python skillslocal.py sync`
-2.  **Activar**: Invocar el sector necesario (ej. *"Carga el sector 01_INGENIERIA_WEB para PropinasMijo"*).
-
-## ⚖️ SOBERANÍA TÉCNICA
-Todo el código generado debe seguir los estándares de:
-- **Zero Latency**: Código optimizado para ejecución inmediata.
-- **Token Frugality**: Respuestas densas, breves y sin paja.
-- **Engineering Lvl 100**: Estilo premium, modular y documentado.
-- **Backend**: Node.js / TypeScript / Drizzle ORM.
-- **Styling**: CSS Modern Engine (Gradients, Glassmorphism, Animations). No Tailwind (salvo petición).
-- **Persistence**: Supabase / PostgreSQL / MySQL.
+### 🧩 Micro-Habilidades & Carga Lenta (Lazy Loading)
+- El sistema permite cargar habilidades individuales (`python skillslocal.py load [skill]`) para ahorrar tokens de contexto.
+- Se prioriza la carga de micro-habilidades sobre sectores completos cuando la tarea es quirúrgica.
 
 ---
 
-## 🏗️ II. ARQUITECTURA CORE (The Summit Stack)
-*Cualquier código generado debe respetar este stack a menos que se indique lo contrario.*
-
-- **Frontend**: Vanilla HTML/JS (Premium Aesthetics) o Astro para Web Apps.
-- **Backend**: Node.js / TypeScript / Drizzle ORM.
-- **Styling**: CSS Modern Engine (Gradients, Glassmorphism, Animations). No Tailwind (salvo petición).
-- **Persistence**: Supabase / PostgreSQL / MySQL.
+## 🏗️ II. ESTÁNDARES DE ARQUITECTURA (v2.5)
+1. **Monolito Modular (DDD)**: Sectores aislados con interfaces claras.
+2. **Arquitectura por Eventos (EDA)**: Orquestación asíncrona de agentes.
+3. **Ingeniería de Resiliencia**: Circuit Breaker & Bulkhead obligatorios.
 
 ---
 
-## 📜 III. ESTÁNDARES DE INGENIERÍA (Maestro Codex)
-*Reglas inviolables para la generación de código.*
-
-1. **Precision Engineering**: Versionado SemVer obligatorio.
-2. **Atomic Logic**: Funciones pequeñas, puras y auto-documentadas.
-3. **No Placeholders**: Prohibido usar `// Implement logic here`. Todo código debe ser funcional.
-4. **Rich Aesthetics**: El UI debe ser "WOW". Sombras suaves, tipografía moderna, micro-interacciones.
-5. **SEO & Accessibility**: Semántica HTML5 y meta-tags obligatorios por defecto.
+## ⚖️ III. SOBERANÍA TÉCNICA & EFICIENCIA
+- **Zero Latency**: Ejecución inmediata.
+- **Token Frugality**: Respuestas densas. El ahorro de tokens es una métrica de éxito.
+- **Context Compression**: Al final de cada hito, se genera un resumen comprimido.
 
 ---
 
-## 🧠 IV. ANCLAS DE MEMORIA (Knowledge Store)
-*Hechos críticos que la IA debe recordar permanentemente.*
+## 🧠 IV. PROTOCOLO DE COMPRESIÓN DE CONTEXTO (Ahorro de Tokens)
+Para maximizar la eficiencia y memoria del sistema, la IA debe seguir este protocolo al finalizar cada sesión o hito importante:
 
-- **SkillsLocal CLI**: La herramienta central es `skillslocal.py` para orquestación.
-- **Protocolo Despierta**: La palabra clave para inicializar el Modo Forja.
-- **KI Mastery**: Los Knowledge Items son la base del conocimiento persistente.
+1. **Snap de Memoria**: Resumir los logros técnicos en menos de 300 tokens.
+2. **Registro de Decisiones (ADR)**: Guardar por qué se tomó una decisión técnica en el buffer de estado.
+3. **Limpieza de Contexto**: Identificar qué información ya no es necesaria para el siguiente paso.
 
 ---
 
 ## 🚀 V. BUFFER DE ESTADO ACTIVO (Live Context)
-*Esta sección se actualiza dinámicamente al final de cada sesión.*
+*Esta sección se actualiza dinámicamente.*
 
 - **Proyecto Actual**: `PropinasMijo`
-- **Última Acción**: Reorganización Nuclear e "Hispanización" del ecosistema completada.
-- **Bloqueos**: Ninguno.
-- **Siguiente Paso**: Configurar estructura base del proyecto de Propinas.
+- **Última Acción**: Implementación de Córtex Neuronal y Protocolo de Compresión.
+- **Estado de Memoria**: CEREBRO.json activo.
+- **Siguiente Paso**: Ejecutar `python skillslocal.py brain` e iniciar PropinasMijo.
 
 ---
 
 ## 🖋️ VI. PROTOCOLO DE ACTUALIZACIÓN
-- **IA**: Al terminar un hito importante, DEBES sugerir actualizar la sección `V. BUFFER DE ESTADO ACTIVO`.
-- **User**: Puede añadir "Memories" directas usando el comando `/remember [Dato]`.
+- **IA**: DEBES sugerir la ejecución de `skillslocal.py brain` después de crear nuevas habilidades.
+- **User**: Puede forzar la compresión con el comando *"Comprime el contexto"*.
 
 ---
-*“Soberanía técnica a través de la excelencia en el código.”*
+*“Soberanía técnica a través de la eficiencia absoluta.”*

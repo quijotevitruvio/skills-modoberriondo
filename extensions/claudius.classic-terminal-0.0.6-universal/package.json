@@ -1,0 +1,39 @@
+{
+	"name": "classic-terminal",
+	"displayName": "classic-terminal",
+	"description": "Dark terminal theme.",
+	"version": "0.0.6",
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "res/icon.png",
+	"publisher": "Claudius",
+	"repository": {
+		"url": "https://github.com/claudiuskastner/vscode-terminal-theme",
+		"type": "git"
+	},
+	"bugs": {
+		"url": "https://github.com/claudiuskastner/vscode-terminal-theme/issues"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Classic Terminal",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Classic Terminal-color-theme.json"
+			}
+		]
+	},
+	"dependencies": {
+		"ovsx": "0.1.0-next.bcce4bc",
+		"vsce": "^1.79.3"
+	},
+	"__metadata": {
+		"installedTimestamp": 1763599605961,
+		"targetPlatform": "universal",
+		"size": 629559
+	}
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "update_all_skills_global",
+    "description": "Actualiza todas las herramientas de Antigravity buscando repositorios Git, dependencias Python o paquetes NPM en el directorio global.",
+    "command": "python C:/Users/Rocka/.antigravity/custom_tools/ag_skill_updater.py",
+    "parameters": {}
+  }
+]

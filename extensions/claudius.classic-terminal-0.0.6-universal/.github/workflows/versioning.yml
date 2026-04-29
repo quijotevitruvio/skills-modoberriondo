@@ -1,0 +1,74 @@
+name: Create Tag
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: npm install vsce -g
+    - run: npm install
+    - run: vsce package
+    - uses: Klemensas/action-autotag@stable
+      id: update_tag
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        tag_prefix: ""
+
+    - name: Create Release
+      if: steps.update_tag.outputs.tagname
+      uses: actions/create-release@v1
+      id: create_release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.update_tag.outputs.tagname }}
+        release_name: Release ${{ steps.update_tag.outputs.tagname }}
+
+    - name: Upload Release Asset
+      if: steps.update_tag.outputs.tagname
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./classic-terminal-${{ steps.update_tag.outputs.tagname }}.vsix
+        asset_name: classic-terminal-${{ steps.update_tag.outputs.tagname }}.vsix
+        asset_content_type: application/vsix
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - name: Publish to Open VSX Registry
+        uses: HaaLeo/publish-vscode-extension@v0
+        with:
+          pat: ${{ secrets.OPEN_VSX_TOKEN }}
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v0
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+      - name: Publish to Open VSX Registry
+        uses: HaaLeo/publish-vscode-extension@v0
+        id: publishToOpenVSX
+        with:
+          pat: ${{ secrets.OPEN_VSX_TOKEN }}
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v0
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+          extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+          packagePath: ''

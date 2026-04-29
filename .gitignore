@@ -1,15 +1,7 @@
-# IDE / Session data
-argv.json
-tools.json
-extensions/
-
-# Dependencies
-node_modules/
-
-# Python
+﻿node_modules/
 __pycache__/
-*.pyc
-
-# OS
-.DS_Store
-Thumbs.db
+*.log
+.tempmediaStorage/
+CEREBRO.json
+argv.json
+backups/
